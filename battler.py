@@ -24,8 +24,8 @@ def modifiers(attacker, atkSpeed, atkSmarts, defender, defSpeed, defSmarts, mode
 		armor = 10.0
 
 	#determine battle random modifiers 
-	atkModNum = random.uniform(.25,1)
-	defModNum = random.uniform(.25,1)
+	atkModNum = random.uniform(.25,.75)
+	defModNum = random.uniform(.25,.75)
 
 	#calculate modifiers
 		
