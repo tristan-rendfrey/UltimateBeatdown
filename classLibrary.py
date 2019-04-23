@@ -39,10 +39,10 @@ Confucius = Fighter('The Old Master Confucius','Confucius', 4.0, 5.0, 8.0, 4.0, 
 #Maneuver = 12
 #Power = 4
 
-Laozi = Fighter('The Great Laozi', 'Laozi', 4.0, 4.5, 8.0, 5.5, 3.0, 50)
-#Combat = 8.5
-#Maneuver = 13.5
-#Power = 3.0
+Laozi = Fighter('The Great Laozi', 'Laozi', 3.5, 7.5, 8.0, 4.0, 2.0, 50)
+#Combat = 11.0
+#Maneuver = 12.0
+#Power = 2.0
 
 SunTzu = Fighter('General Sun Tzu', 'Sun Tzu', 6.0, 4.0, 7.0, 4.0, 4.0, 50)
 #Combat = 10
@@ -78,14 +78,14 @@ Augustus = Fighter('Caesar Augustus', 'Augustus', 6.0, 4.0, 6.5, 4.5, 4.0, 50)
 
 #Egyptians
 
-Hatshepsut = Fighter('The Pharaoh Hatshepsut', 'Hatshepsut', 4.0, 5.5, 6.5, 6.0, 3.0, 50)
-#Combat = 9.5
-#Maneuver = 12.5
+Hatshepsut = Fighter('The Pharaoh Hatshepsut', 'Hatshepsut', 6.0, 5.5, 6.5, 4.0, 3.0, 50)
+#Combat = 11.5
+#Maneuver = 10.5
 #Power = 3
 
-Imhotep = Fighter('Imhotep', 'Imhotep', 3.0, 5.5, 8.0, 4.5, 4.0, 50)
-#Combat = 8.5
-#Maneuver = 12.5
+Imhotep = Fighter('Imhotep', 'Imhotep', 3.0, 6.0, 8.0, 4.0, 4.0, 50)
+#Combat = 9.0
+#Maneuver = 12.0
 #Power = 4
 
 Ramesses = Fighter('Ramesses the Great', 'Ramesses', 5.5, 5.0, 4.5, 6.0, 4.0, 50)

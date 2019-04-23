@@ -10,9 +10,9 @@ def modifiers(attacker, atkSpeed, atkSmarts, defender, defSpeed, defSmarts, mode
 	armor = 0.0
 
 	#determine possible skill boost
-	skillMod= random.randint(1,8)
-	atkSkill = random.randint(1,8) 
-	defSkill = random.randint(1,8)
+	skillMod= random.randint(1,10)
+	atkSkill = random.randint(1,10) 
+	defSkill = random.randint(1,10)
 
 	if skillMod == atkSkill:
 		if mode == 1:

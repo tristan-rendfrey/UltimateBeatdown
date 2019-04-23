@@ -188,9 +188,9 @@ def Egypt(injHealth, name,  mode):
 			time.sleep(0.5)
 			print("\"This kingdom has survived a thousand years. It will not die now.\"")
 			time.sleep(0.5)
-			print("%s  gains 10 health!" %name)
+			print("%s  gains 5 health!" %name)
 			time.sleep(0.5)
-		injHealth += 10
+		injHealth += 5
 	return injHealth
 
 def Ramesses(attack, mode):
