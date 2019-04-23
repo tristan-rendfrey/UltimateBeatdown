@@ -47,8 +47,7 @@ for n in range(1,1000):
 			if len(characters) == 1:
 				champions.append(characters)
 				print(".", end =" ")
-		uniqChamps = set(champions)
-		for champion in uniqChamps:
+		for champion in champions:
 			print("\n")
 			print(champion[0].name)
 			print(champions.count(champion))
