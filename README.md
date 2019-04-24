@@ -8,4 +8,8 @@ specialLibrary contains special ability sets for all characters,
 battler.py runs combat simulations,
 simulateCombat provides general simulation framework. 
 
-This is in an extremely early and raw phase, I expect errors and imbalancing abound.
+This is in an extremely early phase.
+
+0.2
+- Adjusted character stats for balance
+- Adjusted combat calculation for stat balance
