@@ -36,7 +36,7 @@ for n in range(1,1000):
 		print (str(startDT))
 		champions = []
 		print(".", end =" ")
-		for n in range(1,33):
+		for n in range(1,17):
 			characters = simulateCombat.generalSelect()
 			print(".", end =" ")
 			i = 1
@@ -47,10 +47,12 @@ for n in range(1,1000):
 			if len(characters) == 1:
 				champions.append(characters)
 				print(".", end =" ")
+		bigChamps = []
 		for champion in champions:
 			print("\n")
-			print(champion[0].name)
-			print(champions.count(champion))
+			if champion not in bigChamps:
+				print("%s : %s"% (champion[0].name, champions.count(champion)))
+				bigChamps.append(champion)
 		endDT = datetime.datetime.now()
 		print (str(endDT))
 		continue

@@ -24,9 +24,10 @@ def modifiers(attacker, atkSpeed, atkSmarts, defender, defSpeed, defSmarts, mode
 		armor = 10.0
 
 	#determine battle random modifiers 
-	atkModNum = random.uniform(.25,.75)
-	defModNum = random.uniform(.25,.75)
-
+	atkModNum = random.uniform(.25,.60)
+	defModNum = random.uniform(.125,.50)
+	atkSmarts *= (atkModNum + 1)
+	defSmarts *= (defModNum +1)
 	#calculate modifiers
 		
 	atkModifier = (atkModNum * (atkSpeed + atkSmarts) ) + smite
@@ -88,7 +89,7 @@ def damageManager(injHealth, winningHealth, winningPower, injured, victor, injSp
 		crits = specialLibrary.Empire(mode)
 		divinity = crits[1]
 		affinity = crits[0]
-	if victor == ("Virgil"):
+	elif victor == ("Virgil"):
 		crits = specialLibrary.Empire(mode)
 		divinity = crits[1]
 		affinity = crits[0]	
