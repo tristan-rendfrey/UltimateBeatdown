@@ -61,7 +61,7 @@ def BracketStats(opponents):
 		#pair off matches
 		pair = [opponents[matches[i]],opponents[matches[lastIndex-i]]]
 		#run combat (set argument to 0 for quick resolve)
-		victor = simulateCombat.runBattle(pair,2)
+		victor = simulateCombat.runBattle(pair,0)
 		if victor == pair[0]:
 			winners.append(pair[0])
 		elif victor == pair[1]:

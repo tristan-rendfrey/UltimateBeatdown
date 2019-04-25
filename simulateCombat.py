@@ -74,11 +74,14 @@ def runBattle(prophets,mode):
 	for t in range(100):
 
 		#run positioning
-		randInt0 = random.uniform(0,1)
-		randInt1 = random.uniform(0,1)
+		randInt0 = random.uniform(1,1.5)
+		randInt1 = random.uniform(1,1.5)
 		
-		initiative0 = (prophets[0].speed + prophets[0].smarts) * (randInt0)
-		initiative1 = (prophets[1].speed + prophets[1].smarts) * (randInt1) 
+		initiative0 = (prophets[0].smarts + ((prophets[0].speed) * (randInt0)))
+		initiative1 = (prophets[1].smarts + ((prophets[1].speed) * (randInt1)))
+		if mode == 1:
+			print("%s speed: %.1f "%(prophets[0].name, initiative0))
+			print("%s speed: %.1f "%(prophets[1].name, initiative1)) 
 
 		if initiative1 > initiative0:
 			Atkr = prophets[1]
@@ -87,9 +90,9 @@ def runBattle(prophets,mode):
                 	Atkr = prophets[0]
                 	Defr = prophets[1]
 		if mode == 1:
-			print(Atkr.name+" attacks!")
+			print(Atkr.name+" strikes!")
 			time.sleep(1)
-			print(Defr.name+" must defend!")
+			print(Defr.name+" needs to defend!")
 			time.sleep(1)
 
 		#run battle

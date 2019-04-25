@@ -17,7 +17,7 @@ def Socrates(smarts, mode):
 				print("SOCRATES:\"I should no sooner retreat from philosophy, than a hoplite from battle!\"")
 				time.sleep(1.0)
 				print("Socrates gained an intelligence boost!")
-			smarts += 2.5
+			smarts += 2.0
 	return smarts
 
 def Pythagoreas(winningPower, mode):
@@ -82,14 +82,14 @@ def Leonidas(winningPower, health, mode):
 
 #Thermopylae: Leonidas does +3 damage if he has less than 20 health, and x2 damage below 10. 
 
-	if health <= 10:
+	if health <= 15:
 		if mode == 1:
 			time.sleep(0.5)
 			print("\"This! Is! Sparta!\"")
 			time.sleep(1.0)
 		winningPower *= 2
 	
-	elif health <= 20:
+	elif health <= 25:
 		if mode == 1:
 			time.sleep(0.5)
 			print("\"Tonight, we dine in hell!\"")
@@ -114,14 +114,14 @@ def Confucius(winningPower, health, mode):
 	return health
 
 def Laozi(winningPower, mode):
-	nirvana = random.randint(1,4)
-	peace = random.randint(1,4)
+	nirvana = random.randint(1,6)
+	peace = random.randint(1,6)
 	if nirvana == peace:
 		if mode == 1:
 			time.sleep(0.5)
 			print("Laozi becomes one with the Tao!!")
 			time.sleep(1)
-		winningPower /= 2.0
+		winningPower - 3.0
 	return winningPower
 
 def SunTzu(winningPower, health, mode):
@@ -174,7 +174,7 @@ def Republic(winningPower, mode):
 		time.sleep(0.5)
 		print("\"The republic is stronger than you will ever be.\"")
 		time.sleep(1.0)
-	winningPower = (-1)*(winningPower / 4.0)
+	winningPower = (-1)*(winningPower * 3  / 2)
 	return winningPower
 	
 def Egypt(injHealth, name,  mode):
